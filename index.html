@@ -22,7 +22,7 @@
 <meta name="twitter:title" content="Convite Encantado da Lorena • 10 anos">
 <meta name="twitter:description" content="Uma surpresa mágica espera por você. Toque para entrar no jardim encantado!">
 <meta name="twitter:image" content="https://rafaelribeiro-art.github.io/convite-encantado-lorena/capa_whatsapp_lorena.jpg">
-<title>Convite Encantado de Lorena • V11 — Verde da Princesa</title>
+<title>Convite Encantado de Lorena • V12 — Verde da Princesa</title>
 <style>
 :root{--cream:#fff5dc;--mint:#c7e3b6;--gold:#e0be74;--rose:#efb0be;--dark:#061a15;--panel:#0d2c24ee;--green:#1d503d;}
 *{box-sizing:border-box} html,body{margin:0;min-height:100%;background:#071411;color:var(--cream);font-family:Georgia,'Times New Roman',serif} body{overflow-x:hidden}
@@ -232,6 +232,13 @@ html,body{background:#244735}
 body:not([data-scene]) #sound, body[data-scene="0"] #sound { display:none!important; }
 #sound.audio { width:44px; height:44px; min-width:44px; min-height:44px; padding:0!important; display:inline-flex; align-items:center; justify-content:center; font-size:1.25rem; line-height:1; cursor:pointer; box-shadow:0 2px 14px #09261f80; }
 #sound.audio:focus-visible { outline:2px solid #ffe2a2; outline-offset:3px; }
+
+/* V12: Confirmação por categoria, mantendo o estilo original */
+.rsvp-total{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border:1px solid #d7be8b66;border-radius:12px;background:#133b30b0;color:#f7e8c8;font:.9rem Arial,sans-serif}
+.rsvp-total strong{font-size:1.18rem;color:#fff5dc}
+.rsvp-error{margin:0;padding:11px 13px;border:1px solid #ffd5a6aa;border-radius:10px;background:#5a2d24cc;color:#ffe6d3;font:.83rem/1.5 Arial,sans-serif}
+.rsvp-error[hidden]{display:none}
+.rsvp-form select:invalid{color:#d7c6a8}
 </style>
 </head>
 <body data-scene="0">
@@ -298,17 +305,122 @@ body:not([data-scene]) #sound, body[data-scene="0"] #sound { display:none!import
     <p class="eyebrow">O nosso conto fica melhor com você</p>
     <h2 class="hero-title" style="font-size:clamp(2.4rem,9vw,3.5rem)">Sua presença será<br><span class="script">um presente!</span></h2>
     <div class="panel" style="margin-top:24px">
-      <p class="small-note" style="font-size:.86rem;color:#e9ddc9">Preencha os dados e abra o WhatsApp com a confirmação preparada.</p>
+      <p class="small-note" style="font-size:.86rem;color:#e9ddc9">Para prepararmos cada detalhe desse dia encantado com carinho, conte-nos quem virá celebrar com a Lorena. 💚</p>
       <form id="rsvp" class="rsvp-form">
-        <div class="field"><label for="guest">Seu nome</label><input id="guest" placeholder="Como podemos chamar você?" required maxlength="90" autocomplete="name"></div>
-        <div class="field"><label for="people">Quantas pessoas irão, incluindo você?</label>
-          <select id="people" required>
-            <option value="1">1 pessoa</option><option value="2">2 pessoas</option><option value="3">3 pessoas</option><option value="4">4 pessoas</option><option value="5">5 pessoas</option><option value="6">6 pessoas</option><option value="7">7 pessoas</option><option value="8">8 pessoas</option><option value="9">9 pessoas</option><option value="10">10 pessoas</option>
+        <div class="field"><label for="guest">Seu nome</label><input id="guest" name="guest" placeholder="Como podemos chamar você?" required aria-required="true" maxlength="90" autocomplete="name"></div>
+        <div class="field"><label for="adults">Adultos</label>
+          <select id="adults" name="adults" required aria-required="true">
+              <option value="" selected disabled>Selecione a quantidade</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
           </select>
         </div>
+        <div class="field"><label for="boys">Meninos</label>
+          <select id="boys" name="boys" required aria-required="true">
+              <option value="" selected disabled>Selecione a quantidade</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+          </select>
+        </div>
+        <div class="field"><label for="girls">Meninas</label>
+          <select id="girls" name="girls" required aria-required="true">
+              <option value="" selected disabled>Selecione a quantidade</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+          </select>
+        </div>
+        <div class="rsvp-total" aria-live="polite"><span>Total de convidados</span><strong id="rsvpTotal">—</strong></div>
+        <p id="rsvpError" class="rsvp-error" role="alert" hidden></p>
         <button class="btn" type="submit">Confirmar pelo WhatsApp ♡</button>
       </form>
-      <p class="small-note" style="text-align:center;margin-top:14px">O botão já está pronto; se tu quiser apontar direto para um número específico, depois eu só preciso do WhatsApp da família.</p>
+      <p class="small-note" style="text-align:center;margin-top:14px">Sua confirmação será concluída quando a mensagem for enviada no WhatsApp.</p>
     </div>
     
   <div class="page-nav" role="navigation" aria-label="Navegação da etapa"><button type="button" class="back-step" data-back="3">← Voltar</button></div></section>
@@ -337,16 +449,45 @@ $('letter').addEventListener('click',()=>{if($('letter').classList.contains('ope
 const ff=$('fireflies'); for(let i=0;i<34;i++){ let e=document.createElement('span'); e.className='firefly'; e.style.left=(4+Math.random()*92)+'%'; e.style.top=(12+Math.random()*74)+'%'; e.style.setProperty('--t',(3+Math.random()*8).toFixed(2)+'s'); e.style.setProperty('--d',(-Math.random()*9).toFixed(2)+'s'); e.style.opacity=(.28+Math.random()*.72).toFixed(2); ff.appendChild(e); }
 function petals(){ if(matchMedia('(prefers-reduced-motion: reduce)').matches) return; for(let i=0;i<22;i++){ let el=document.createElement('span'); el.className='petal'; el.textContent=['✦','✧','❀','✿'][i%4]; el.style.left=Math.random()*100+'vw'; el.style.top='-20px'; el.style.color=i%3===0?'#ffbdc0':'#e8d397'; el.style.animationDelay=(Math.random()*.8)+'s'; el.style.setProperty('--dx',(Math.random()*200-100)+'px'); document.body.appendChild(el); setTimeout(()=>el.remove(),3800); } }
 
-$('rsvp').addEventListener('submit',e=>{ e.preventDefault(); const name=$('guest').value.trim(); const count=Number($('people').value); if(!name||!Number.isInteger(count)||count<1)return; const msg=`Olá! ✨💚
-Quero confirmar minha presença no aniversário de 10 anos de Lorena! 👑🐸
+const rsvpFields=['adults','boys','girls'];
+function updateRsvpTotal(){
+  const values=rsvpFields.map(id=>$(id).value);
+  const ready=values.every(v=>v!==''&&Number.isInteger(Number(v))&&Number(v)>=0);
+  $('rsvpTotal').textContent=ready?String(values.reduce((sum,v)=>sum+Number(v),0)):'—';
+}
+function rsvpError(message){const box=$('rsvpError');box.textContent=message;box.hidden=!message;}
+$('guest').addEventListener('input',()=>rsvpError(''));
+rsvpFields.forEach(id=>$(id).addEventListener('change',()=>{rsvpError('');updateRsvpTotal();}));
+$('rsvp').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=$('guest').value.trim();
+  const values=rsvpFields.map(id=>$(id).value);
+  if(!name){rsvpError('Por favor, informe seu nome para confirmar a presença.');$('guest').focus();return;}
+  if(values.some(v=>v===''||!Number.isInteger(Number(v))||Number(v)<0||Number(v)>30)){
+    rsvpError('Por favor, informe a quantidade de adultos, meninos e meninas. Se não houver convidados em alguma categoria, selecione 0.');
+    const first=rsvpFields.find(id=>$(id).value==='');if(first)$(first).focus();return;
+  }
+  const [adults,boys,girls]=values.map(Number);
+  const total=adults+boys+girls;
+  if(total===0){rsvpError('Informe pelo menos 1 pessoa para confirmar a presença.');$('adults').focus();return;}
+  rsvpError('');
+  const msg=`Olá! ✨💚
+Gostaria de confirmar nossa presença no aniversário de 10 anos da Lorena! 👑🐸
 
 Nome: ${name}
-Quantidade de pessoas (incluindo eu): ${count}
+Adultos: ${adults}
+Meninos: ${boys}
+Meninas: ${girls}
+Total: ${total} pessoa${total===1?'':'s'}
 
 Festa: 26/12/2026, às 19h.
 Local: Espaço Salão de Festa Meison Gabriely.
 
-Nos vemos nessa noite encantada! 🌸`; let url=WHATSAPP_ORGANIZADOR ? 'https://wa.me/'+WHATSAPP_ORGANIZADOR+'?text='+encodeURIComponent(msg) : 'https://api.whatsapp.com/send?text='+encodeURIComponent(msg); window.open(url,'_blank','noopener,noreferrer'); go(5); });
+Estamos felizes em participar desse dia especial! 🌸`;
+  const url=WHATSAPP_ORGANIZADOR ? 'https://wa.me/'+WHATSAPP_ORGANIZADOR+'?text='+encodeURIComponent(msg) : 'https://api.whatsapp.com/send?text='+encodeURIComponent(msg);
+  window.open(url,'_blank','noopener,noreferrer');
+  go(5);
+});
 function updateCountdown(){ const ms=new Date('2026-12-26T19:00:00-03:00').getTime()-Date.now(); if(ms<=0){ $('countdown').textContent='A magia chegou! ✨'; return; } const days=Math.floor(ms/86400000), hrs=Math.floor(ms%86400000/3600000); $('countdown').textContent=`✦ Faltam ${days} dias e ${hrs} horas para a magia ✦`; } updateCountdown(); setInterval(updateCountdown,60000);
 const audio=$('themeAudio'); const btn=$('sound');
 // Mobile-safe: audio embedded directly in the audio src above. A single direct play() from a user tap.
